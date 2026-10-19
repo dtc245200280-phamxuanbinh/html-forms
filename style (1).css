@@ -1,0 +1,99 @@
+/* ===== Định dạng chung ===== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+/* ===== Tiêu đề chính (có ảnh nền) ===== */
+header {
+    background-color: #4CAF50;
+    /* Ảnh nền dạng hoa văn chấm tròn, nhúng sẵn nên không cần file ảnh */
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24'%3E%3Ccircle cx='3' cy='3' r='2' fill='white' fill-opacity='0.25'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    color: white;
+    padding: 30px 20px;
+    font-size: 24px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1em;
+}
+
+/* ===== Ảnh đại diện ===== */
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #4CAF50;
+    margin: 20px;
+    object-fit: cover;
+}
+
+/* ===== Các phần nội dung ===== */
+section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+.goals {
+    border-left: 5px solid #4CAF50;
+}
+
+/* ===== Danh sách ===== */
+ul {
+    list-style-type: square;
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* ===== Bảng thông tin liên hệ ===== */
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 50%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+a {
+    color: #1565c0;
+}
+
+/* ===== Footer ===== */
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+/* ===== Hiển thị tốt trên điện thoại ===== */
+@media (max-width: 600px) {
+    table {
+        width: 95%;
+    }
+    header {
+        font-size: 20px;
+    }
+}
