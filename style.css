@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #333333;
+}
+
+h1 {
+    color: #1a5fb4;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 32px;
+    color: #1a5fb4;
+    font-size: 18px;
+}
+
+h3 {
+    margin-bottom: 4px;
+    font-size: 15px;
+}
+
+/* 1. Đổi kiểu đánh dấu: hình vuông */
+.square-list {
+    list-style-type: square;
+}
+
+/* 2. Danh sách có thứ tự: số La Mã viết hoa */
+.roman-list {
+    list-style-type: upper-roman;
+}
+
+/* 3. Dùng hình ảnh làm dấu đánh dấu */
+.image-list {
+    list-style-image: url("bullet.svg");
+}
+
+/* 4. Vị trí dấu đánh dấu */
+.pos-outside,
+.pos-inside {
+    background-color: #eef2f6;
+    padding: 10px 10px 10px 40px;
+}
+
+.pos-outside {
+    list-style-position: outside;
+}
+
+.pos-inside {
+    list-style-position: inside;
+}
+
+/* 5. Thuộc tính rút gọn: type position image */
+.shorthand-list {
+    list-style: circle inside url("bullet.svg");
+}
+
+/* 6. Màu sắc và khoảng cách */
+.color-list {
+    background-color: #1a5fb4;
+    color: #ffffff;
+    padding: 15px 15px 15px 40px;
+    margin: 10px 0 20px 0;
+    border-radius: 6px;
+}
+
+.color-list li {
+    margin-bottom: 8px;
+}
+
+/* 7. Bài tổng hợp: Lộ trình học lập trình Web */
+.roadmap {
+    list-style: decimal-leading-zero outside;
+    background-color: #fff4d6;
+    color: #7a4b00;
+    padding: 18px 18px 18px 50px;
+    margin: 10px 0;
+    border-left: 5px solid #f0a500;
+}
+
+.roadmap li {
+    margin-bottom: 6px;
+}
