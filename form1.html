@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form đơn giản</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 30px 15px;
+        }
+        .form-box {
+            max-width: 480px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            text-align: center;
+            color: #1a5fb4;
+            margin-top: 0;
+        }
+        .row {
+            margin-bottom: 16px;
+        }
+        label.title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #333333;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 9px 10px;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus {
+            border-color: #1a5fb4;
+            outline: none;
+        }
+        .hobbies label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons input {
+            padding: 9px 22px;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0 6px;
+        }
+        .btn-submit { background-color: #1a5fb4; }
+        .btn-reset  { background-color: #888888; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Thông tin cá nhân</h2>
+        <form action="#" method="GET">
+            <div class="row">
+                <label class="title" for="yourname">Họ và tên</label>
+                <input type="text" id="yourname" name="yourname" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="row">
+                <label class="title" for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Nhập email">
+            </div>
+
+            <div class="row hobbies">
+                <label class="title">Sở thích</label>
+                <label><input type="checkbox" name="hobby" value="Đọc sách"> Đọc sách</label>
+                <label><input type="checkbox" name="hobby" value="Nghe nhạc"> Nghe nhạc</label>
+                <label><input type="checkbox" name="hobby" value="Thể thao"> Thể thao</label>
+                <label><input type="checkbox" name="hobby" value="Du lịch"> Du lịch</label>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" class="btn-submit" value="Gửi thông tin">
+                <input type="reset" class="btn-reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
