@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Khảo sát khách hàng</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eef2f6;
+            margin: 0;
+            padding: 30px 15px;
+            color: #333333;
+        }
+        .form-box {
+            max-width: 620px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+        }
+        .form-header {
+            background-color: #1a5fb4;
+            color: #ffffff;
+            padding: 22px 30px;
+        }
+        .form-header h1 {
+            margin: 0 0 6px 0;
+            font-size: 24px;
+        }
+        .form-header p {
+            margin: 0;
+            font-size: 14px;
+            opacity: 0.9;
+        }
+        form {
+            padding: 25px 30px 30px 30px;
+        }
+        fieldset {
+            border: none;
+            border-top: 1px solid #dddddd;
+            margin: 0 0 18px 0;
+            padding: 12px 0 0 0;
+        }
+        legend {
+            font-weight: bold;
+            color: #1a5fb4;
+            padding-right: 10px;
+            font-size: 16px;
+        }
+        .row {
+            margin-bottom: 16px;
+        }
+        .title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .required {
+            color: #d9534f;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 9px 10px;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            font-size: 15px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #1a5fb4;
+            outline: none;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .options label {
+            display: inline-block;
+            margin-right: 18px;
+            margin-bottom: 4px;
+            cursor: pointer;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 22px;
+        }
+        .buttons input {
+            padding: 10px 28px;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0 6px;
+        }
+        .btn-submit { background-color: #1a5fb4; }
+        .btn-reset  { background-color: #888888; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <div class="form-header">
+            <h1>Khảo sát khách hàng</h1>
+            <p>Cảm ơn bạn đã dành thời gian chia sẻ ý kiến để chúng tôi phục vụ tốt hơn.</p>
+        </div>
+
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Thông tin của bạn</legend>
+
+                <div class="row">
+                    <label class="title" for="fullname">Họ và tên <span class="required">*</span></label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên" required>
+                </div>
+
+                <div class="row">
+                    <label class="title" for="email">Email <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                </div>
+
+                <div class="row">
+                    <label class="title" for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Về trải nghiệm của bạn</legend>
+
+                <div class="row options">
+                    <span class="title">Bạn biết đến chúng tôi qua đâu?</span>
+                    <label><input type="radio" name="source" value="Bạn bè"> Bạn bè</label>
+                    <label><input type="radio" name="source" value="Mạng xã hội"> Mạng xã hội</label>
+                    <label><input type="radio" name="source" value="Quảng cáo"> Quảng cáo</label>
+                    <label><input type="radio" name="source" value="Khác"> Khác</label>
+                </div>
+
+                <div class="row">
+                    <label class="title" for="frequency">Bạn sử dụng dịch vụ thường xuyên đến mức nào?</label>
+                    <select id="frequency" name="frequency">
+                        <option value="">-- Chọn --</option>
+                        <option value="Lần đầu">Lần đầu tiên</option>
+                        <option value="Thỉnh thoảng">Thỉnh thoảng</option>
+                        <option value="Hàng tháng">Hàng tháng</option>
+                        <option value="Hàng tuần">Hàng tuần</option>
+                    </select>
+                </div>
+
+                <div class="row options">
+                    <span class="title">Bạn hài lòng với điều gì nhất? (chọn nhiều)</span>
+                    <label><input type="checkbox" name="liked" value="Chất lượng sản phẩm"> Chất lượng sản phẩm</label>
+                    <label><input type="checkbox" name="liked" value="Giá cả"> Giá cả</label>
+                    <label><input type="checkbox" name="liked" value="Thái độ phục vụ"> Thái độ phục vụ</label>
+                    <label><input type="checkbox" name="liked" value="Giao hàng"> Giao hàng</label>
+                </div>
+
+                <div class="row options">
+                    <span class="title">Mức độ hài lòng chung <span class="required">*</span></span>
+                    <label><input type="radio" name="rating" value="1" required> 1 - Rất tệ</label>
+                    <label><input type="radio" name="rating" value="2"> 2</label>
+                    <label><input type="radio" name="rating" value="3"> 3</label>
+                    <label><input type="radio" name="rating" value="4"> 4</label>
+                    <label><input type="radio" name="rating" value="5"> 5 - Rất tốt</label>
+                </div>
+
+                <div class="row options">
+                    <span class="title">Bạn có sẵn lòng giới thiệu chúng tôi cho người khác không?</span>
+                    <label><input type="radio" name="recommend" value="Có"> Có</label>
+                    <label><input type="radio" name="recommend" value="Không"> Không</label>
+                    <label><input type="radio" name="recommend" value="Chưa chắc"> Chưa chắc</label>
+                </div>
+
+                <div class="row">
+                    <label class="title" for="comment">Góp ý thêm cho chúng tôi</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Nhập góp ý của bạn"></textarea>
+                </div>
+            </fieldset>
+
+            <div class="buttons">
+                <input type="submit" class="btn-submit" value="Gửi khảo sát">
+                <input type="reset" class="btn-reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
