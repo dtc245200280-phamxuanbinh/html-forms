@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký người dùng</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 30px 15px;
+        }
+        .form-box {
+            max-width: 440px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+        h2 {
+            text-align: center;
+            color: #1a5fb4;
+            margin-top: 0;
+        }
+        .row {
+            margin-bottom: 16px;
+        }
+        .title {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 6px;
+            color: #333333;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: 100%;
+            padding: 9px 10px;
+            border: 1px solid #bbbbbb;
+            border-radius: 4px;
+            font-size: 15px;
+            box-sizing: border-box;
+        }
+        input:focus {
+            border-color: #1a5fb4;
+            outline: none;
+        }
+        .options label {
+            margin-right: 18px;
+            cursor: pointer;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 22px;
+        }
+        .buttons input {
+            padding: 9px 24px;
+            font-size: 15px;
+            border: none;
+            border-radius: 4px;
+            color: #ffffff;
+            cursor: pointer;
+            margin: 0 6px;
+        }
+        .btn-submit { background-color: #1a5fb4; }
+        .btn-reset  { background-color: #888888; }
+    </style>
+</head>
+<body>
+    <div class="form-box">
+        <h2>Đăng ký người dùng</h2>
+        <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+            <div class="row">
+                <label class="title" for="name">Họ và tên</label>
+                <input type="text" id="name" name="name" placeholder="Nhập họ và tên">
+            </div>
+
+            <div class="row">
+                <label class="title" for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="row">
+                <label class="title" for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại">
+            </div>
+
+            <div class="row options">
+                <span class="title">Giới tính</span>
+                <label><input type="radio" name="gender" value="Nam"> Nam</label>
+                <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                <label><input type="radio" name="gender" value="Khác"> Khác</label>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" class="btn-submit" value="Đăng ký">
+                <input type="reset" class="btn-reset" value="Nhập lại">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
