@@ -1,0 +1,72 @@
+/* Bộ chọn phần tử (element): đổi màu nền cho cả trang */
+body {
+    background-color: #e8f5e9;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+/* Bộ chọn phần tử + nhóm (grouping): h1 và p dùng chung kiểu */
+h1, p {
+    margin: 20px auto;
+}
+
+/* Căn giữa tiêu đề h1 */
+h1 {
+    text-align: center;
+    color: #2e7d32;
+}
+
+/* Bộ chọn id: chỉ áp dụng cho đoạn giới thiệu */
+#intro {
+    max-width: 500px;
+    line-height: 1.6;
+}
+
+/* Bộ chọn class: định dạng danh sách */
+.hobbies {
+    display: inline-block;
+    text-align: left;
+    list-style-type: square;
+}
+
+/* Mỗi sở thích một màu khác nhau (class) */
+.reading {
+    color: #d32f2f;
+}
+
+.sport {
+    color: #1976d2;
+}
+
+.coding {
+    color: #f57c00;
+}
+
+/* Pseudo-class :hover cho mục trong danh sách */
+.hobbies li:hover {
+    font-weight: bold;
+}
+
+/* Nút bấm */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Hover effect cho nút bấm */
+.btn:hover {
+    background-color: #2e7d32;
+}
+
+/* Pseudo-class :active khi đang nhấn */
+.btn:active {
+    background-color: #1b5e20;
+}
