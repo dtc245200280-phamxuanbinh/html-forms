@@ -1,0 +1,10 @@
+/* PHIÊN BẢN 1: "Biển xanh" - quy tắc Analogous (màu liền kề trên Color Wheel)
+   Xanh dương -> xanh ngọc -> xanh lá: cảm giác mát, tin cậy, gần với màu Trello */
+:root {
+    --primary-color: #0079BF;
+    --secondary-color: #00717F;
+    --accent-color: #2E7D4F;
+    --darker-primary-color: #005A8F;
+    --text-color: #1F2D3A;
+    --light-bg-color: #EAF4FB;
+}

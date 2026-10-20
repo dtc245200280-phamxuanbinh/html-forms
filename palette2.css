@@ -1,0 +1,10 @@
+/* PHIÊN BẢN 2: "Hoàng hôn" - bộ màu ấm: hồng đậm, tím, cam cháy
+   Cảm giác năng động, sáng tạo, khác hẳn phiên bản 1 */
+:root {
+    --primary-color: #B0235A;
+    --secondary-color: #5B2A6E;
+    --accent-color: #B5470B;
+    --darker-primary-color: #861A44;
+    --text-color: #2E1A24;
+    --light-bg-color: #FBF1F4;
+}

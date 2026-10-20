@@ -1,0 +1,26 @@
+/* Các lớp dùng chung cho cả 2 phiên bản.
+   Màu sắc lấy từ biến CSS (--primary-color,...) được khai báo trong palette1.css / palette2.css */
+body {
+    background-color: var(--light-bg-color);
+    color: var(--text-color);
+}
+
+.primary-bg { background-color: var(--primary-color); }
+.secondary-bg { background-color: var(--secondary-color); }
+.accent-bg { background-color: var(--accent-color); }
+
+.text-primary-color { color: var(--primary-color); }
+.text-secondary-color { color: var(--secondary-color); }
+.text-accent-color { color: var(--accent-color); }
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+}
+.btn-primary-custom:hover,
+.btn-primary-custom:focus {
+    background-color: var(--darker-primary-color);
+    border-color: var(--darker-primary-color);
+    color: white;
+}
